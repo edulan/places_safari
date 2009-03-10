@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute">
+	<mx:Script>
+		<![CDATA[
+			import placessafari.ApplicationFacade;
+			private var facade:ApplicationFacade = ApplicationFacade.getInstance();		
+			
+			public function onLoginClick(event:MouseEvent):void {
+				var mwEvent:MainViewEvent = new MainViewEvent(MainViewEvent.MAIN_MENU_LOGIN)
+				dispatchEvent(mwEvent);
+			}			
+		]]>
+	</mx:Script>
+</mx:Application>
